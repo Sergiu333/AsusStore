@@ -1,0 +1,711 @@
+body{
+  background-color: #121414;
+}
+*,*:before,*:after{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+.container{
+  max-width:1180px;
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #272727;
+  margin-top: 60px;
+  border-radius: 40px;
+/*  box-shadow: 0px 0px 10px 5px #6DE751;*/
+
+  box-shadow: 10px 5px #6DE751;
+}
+
+/* =================meniu=================== */
+
+/*====================animation logo================*/
+.header__logo {
+            animation-name: stretch;
+            animation-duration: 1.0s;
+            animation-timing-function: ease-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+  
+        @keyframes stretch {
+            0% {
+                transform: scale(1.0);          
+            }
+  
+            50% {
+                 transform: scale(1.05);
+            }
+  
+            100% {
+                transform: scale(1.1);
+                
+            }
+        }
+/*==================================================*/
+.header__logo{
+  border-radius: 50%;
+  width: 162px;
+  height: 162px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+
+}
+
+.nav__links{
+  list-style: none;
+}
+.nav__links li{
+  display: inline-block;
+}
+.nav__links li a{
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.nav__links li a:hover{
+  color: #FF0099;
+  transition: all 0.5s ease 0s;
+
+}
+
+/*=============tabel_intro============*/
+
+
+.intro{
+max-width:1130px;
+height: 547px;
+  margin: 0px auto;
+}
+
+
+.tabel_intro{
+  max-width:964px;
+  height: 408px;
+  margin: 0px auto;
+
+}
+
+
+.table_intro h1{
+
+/*color: #FF0099;*/
+color: #fff;
+}
+
+.table_intro th{
+width: 50%;
+}
+
+.span_AsusStore{
+  color: #6DE751;
+}
+
+.table_intro tr th img:hover{
+transform: scale(1.1);
+transition: transform .4s ;
+
+}
+
+
+
+/*=======================================*/
+
+.info_site{
+  padding: 20px 0px;
+  background-color: red;
+  margin-top: 100px;
+  max-width:1150px;
+  margin: 0px auto;
+  border-radius: 5px;
+}
+
+/*=================footer====================*/
+
+footer{
+   max-width:1180px;
+   margin: 0px auto;
+   position: relative;
+   bottom: 0px;
+   width: 100%;
+   background-color: #C4C4C4;
+   color: black;
+   text-align: center;
+   border-radius: 5px;
+   height: 576px;
+   margin-bottom: 20px;
+   margin-top: 1900px;
+
+}
+
+/*==============grid==============*/
+
+.grid_container{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 600px;
+
+}
+
+
+.grid_item{
+  text-align: center;
+  font-size: 20px;
+
+}
+
+
+#Contacte{
+width: 207px;
+height: 74px;
+
+margin-left: 79px;
+margin-top: 60px;
+
+font-size: 74px;
+color: #fff;
+/*font-family: 'Poppins', sans-serif;*/
+}
+
+
+#footer_recenzie{
+width: 479px;
+height: 64px;
+
+margin-left: 79px;
+margin-top: 21px;
+font-size: 21px;
+color: #fff;
+ word-spacing: 7px;
+}
+
+.footer_plane{
+  width: 533px;
+  height: 300px;
+  margin-left: -150px; /*Error*/
+
+}
+
+.footer_form{
+  width: 583px;
+  height: 463px;
+}
+
+.footer_label{
+  padding-top: 20px;
+  width: 20px;
+  display: block;
+  font-size: 28px;
+  color: #fff;  
+}
+input{
+display: inline-block;
+padding: 12px 20px;
+
+  width: 100%;
+  font-size: 28px;
+  margin: 0px;
+
+}
+
+input[type=submit]{
+  width: 583px;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+
+
+}
+
+.footer_message{
+  resize: none;
+  width: 583px;
+  height: 163px;
+  font-size: 28px;
+  padding: 14px 20px;
+  
+}
+
+
+
+
+
+
+
+/*==============adaptiv============*/
+
+/*==============meniu adaptiv=======*/
+
+@media (max-width: 767px){
+  body.lock{
+    overflow: hidden;
+  }
+
+  .header__body{
+    height: 50px;
+  }
+  .header__logo{
+    flex: 0 0 40px;
+  }
+  .header__burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+  .header__burger span{
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before,
+  .header__burger:after{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before{
+    top: 0;
+  }
+  .header__burger:after{
+    bottom: 0;
+  }
+  .header__burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active span{
+    display: none;
+  }
+
+  /***************************/
+  .header__menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #18b5a4;
+    padding: 70px 10px 20px 10px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__list{
+    display: block;
+  }
+  .header__list li{
+    margin: 0 0 20px 0;
+  }
+  .header__menu.active{
+    top: 0;
+  }
+  .header__link{
+    font-size: 24px;
+  }
+}
+
+
+/*================Rog_strix====================*/
+.info_Rog_Strix{
+   max-width:1180px;
+   margin: 0px auto;
+   position: relative;
+   bottom: 0px;
+   width: 100%;
+   background-color: #1E1D1E;
+   color: black;
+   text-align: center;
+   border-radius: 5px;
+   height: 400px;
+   margin-bottom: 20px;
+   margin-top: 60px;
+}
+
+.info_Rog_Strix{
+ display: grid;
+ grid-template-columns: auto auto;
+
+}
+
+.grid_info{
+    
+     text-align: center;
+  font-size: 20px;
+}
+
+.img_Rog{
+  width: 600px;
+  height: 400px;
+}
+
+.grid_info p{
+  font-size: 28px;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 50px;
+  text-align: left;
+
+}
+.span_ROG{
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.button_ROG input{
+  color: red;
+  background-color: #121414;
+  width: 200px;
+/*  margin-left: -150px;*/
+  margin-top: 20px;
+
+}
+.button_ROG{
+  background-color: #1E1D1E;
+}
+.button_ROG input:hover {
+  background-color: #121010;
+  color: #FF1E47;
+}
+
+/*================tuf gaming================*/
+
+.info_tuf_gaming{
+   max-width:1180px;
+   margin: 0px auto;
+   position: relative;
+   bottom: 0px;
+   width: 100%;
+   background-color: #1E1D1E;
+   color: black;
+   text-align: center;
+   border-radius: 5px;
+   height: 400px;
+   margin-bottom: 20px;
+   margin-top: 100px;
+}
+
+.info_tuf_gaming{
+ display: grid;
+ grid-template-columns: auto auto;
+
+}
+
+.grid_tuf{
+    
+  text-align: center;
+  font-size: 20px;
+}
+
+/*====================================*/
+
+.grid_tuf p{
+  font-size: 28px;
+  color: #fff;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.grid_tuf img{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.grid_tuf{
+
+}
+.span_tuf{
+  color: #FF1E47;
+  font-weight: bold;
+}
+
+/*==================asus==================*/
+
+.info_asus{
+   max-width:1180px;
+   margin: 0px auto;
+   position: relative;
+   bottom: 0px;
+   width: 100%;
+   background-color: #1E1D1E;
+   color: black;
+   text-align: center;
+   border-radius: 5px;
+   height: 400px;
+   margin-bottom: 20px;
+   margin-top: 100px;
+}
+
+.info_asus{
+ display: grid;
+ grid-template-columns: auto auto;
+
+}
+
+.grid_asus{
+    
+  text-align: center;
+  font-size: 20px;
+}
+
+.grid_asus img{
+  width: 600px;
+  height: 400px;
+  margin-top: -40px;
+}
+
+.grid_asus p{
+  margin-left: 20px;
+  margin-top: 70px;
+  text-align: left;
+  color: #fff;
+  font-size: 28px;
+
+}
+.span_ProArt{
+  font-weight: bold;
+  color: #FF1E47;
+}
+
+/*===============Accesorii==================*/
+
+.grid_Accesorii img{
+  width: 350px;
+  height: 350px;
+}
+
+
+/*===============cart===================*/
+
+
+.cart{
+   max-width:1180px;
+   margin: 0px auto;
+   position: relative;
+   bottom: 0px;
+   background-color: #1E1D1E;
+   color: black;
+   text-align: center;
+   border-radius: 5px;
+   height: 350px;
+   width: 300px;
+   margin-bottom: 20px;
+   margin-top: 30px;
+   float: left;
+   margin-left: 60px;
+}
+
+
+
+.cart{
+ display: grid;
+ grid-template-columns: auto auto;
+
+}
+.cart:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.grid_cart img{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.grid_cart img:hover{
+  margin-top: 10px;
+  transform: scale(1.1);
+  transition: transform .4s ;
+}
+.grid_cart p{
+  text-align: left;
+  margin-top: 15px;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 20px;
+
+
+}
+#card_pret{
+  color: #6DE751;
+}
+
+/*=============login-form=======================*/
+
+/* Full-width input fields */
+inputlogin[type=text], inputlogin[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+/* Set a style for all buttons */
+.loginbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.loginbtn2 {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-right: 5px;
+  margin-left: 15px;
+
+}
+
+.loginbtn2:hover {
+  opacity: 0.8;
+
+}
+
+.loginbtn:hover {
+  opacity: 0.8;
+
+}
+
+.form_login{
+  float: right;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.containerlogin {
+  padding: 16px;
+  border-radius: 0px;
+  box-shadow: 0px 0px;
+  background-color: silver;
+  color: #fff;
+
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  color: silver;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 500px; /* Could be more or less, depending on screen size */
+
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
